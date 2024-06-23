@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "216796717086",
+    "firebase_url": "https://login-a966f-default-rtdb.firebaseio.com",
+    "project_id": "login-a966f",
+    "storage_bucket": "login-a966f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216796717086:android:0dd12fdb40da4d10960e0f",
+        "android_client_info": {
+          "package_name": "com.example.licenta30"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVr5_WiNbBgzgkU3igDv1sNQJlPTxG6RE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

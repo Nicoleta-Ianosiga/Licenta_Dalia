@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/log_in_background">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/bluetoothOn"
+            android:layout_weight="1"
+            android:text="Bluetooth On"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/blueish"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            app:cornerRadius="20dp"/>
+
+        <Button
+            android:id="@+id/bluetoothOff"
+            android:layout_weight="1"
+            android:text="Bluetooth Off"
+            android:textColor="@color/blueish"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            app:cornerRadius="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/show"
+            android:layout_weight="1"
+            android:text="Show Paired Devices"
+            android:textColor="@color/blueish"
+            tools:targetApi="s"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/button_text_color"
+            app:cornerRadius="20dp"/>
+        <!--        <Button-->
+        <!--            android:id="@+id/unlock"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:text="Unlock"-->
+        <!--            android:textColor="@color/blueish"-->
+        <!--            android:backgroundTint="@color/button_text_color"-->
+        <!--            tools:targetApi="s"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            app:cornerRadius="20dp"-->
+        <!--            android:textAllCaps="false"/>-->
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutScan"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/teal_700"/>
+    <Button
+        android:id="@+id/logOut"
+        android:text="Log Out"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blueish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        app:cornerRadius="20dp"/>
+
+</RelativeLayout>

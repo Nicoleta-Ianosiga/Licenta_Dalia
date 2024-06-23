@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true"
+    android:backgroundTint="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/door_name"
+            android:text="Door"
+            android:textStyle="italic"
+            android:textColor="@color/blueish"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_stamp"
+            android:text="Time"
+            android:textStyle="italic"
+            android:textColor="@color/blueish"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/door_name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user"
+            android:text="User Id/Email"
+            android:textStyle="italic"
+            android:textColor="@color/blueish"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/time_stamp"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
